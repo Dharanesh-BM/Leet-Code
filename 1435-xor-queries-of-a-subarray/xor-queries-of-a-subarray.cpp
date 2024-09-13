@@ -1,6 +1,7 @@
 class Solution {
 public:
     vector<int> xorQueries(vector<int>& arr, vector<vector<int>>& queries) {
+        ios_base::sync_with_stdio(0);
         vector<int> answer;
         int temp = -1;
         for(auto i:queries){
