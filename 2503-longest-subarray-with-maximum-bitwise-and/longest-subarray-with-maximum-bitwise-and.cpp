@@ -1,6 +1,7 @@
 class Solution {
 public:
     int longestSubarray(vector<int>& nums) {
+        ios_base::sync_with_stdio(0);
         int max = 0,size = 0;
         int max_size = 0;
 
@@ -9,7 +10,6 @@ public:
                 max = nums[j];
             }
         }
-        // cout << "max : " << max << endl;
         
         for(int j = 0; j<nums.size();j++){
             if(nums[j] == max){
