@@ -13,6 +13,7 @@ public:
     }
 
     int findMinDifference(vector<string>& timePoints) {
+        ios_base::sync_with_stdio(0);
         vector <int> Minutes;
 
         for(auto i:timePoints){
