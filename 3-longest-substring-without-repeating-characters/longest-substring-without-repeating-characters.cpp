@@ -1,6 +1,7 @@
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
+        ios_base::sync_with_stdio(0);
         vector <char> stringChar;
         int size=0,max_size=0;
         for(char i:s){
