@@ -1,6 +1,10 @@
 class Solution {
 public:
     vector<int> lexicalOrder(int n) {
+        ios_base::sync_with_stdio(0);
+        cin.tie(0);
+        cout.tie(0);
+        
         vector <int> values;
         vector <string> s_values;
         for(int i=1;i<=n;i++){
