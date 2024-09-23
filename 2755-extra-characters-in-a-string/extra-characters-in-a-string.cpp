@@ -1,6 +1,7 @@
 class Solution {
 public:
     int minExtraChar(string s, vector<string>& dictionary) {
+        ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
         unordered_set<string> dict(dictionary.begin(), dictionary.end()); // Set for O(1) lookup
         int n = s.size();
         vector<int> dp(n + 1, n); // DP array initialized with maximum extra characters
