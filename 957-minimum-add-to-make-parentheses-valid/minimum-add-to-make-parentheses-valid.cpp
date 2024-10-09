@@ -1,6 +1,9 @@
 class Solution {
 public:
     int minAddToMakeValid(string s) {
+        ios_base::sync_with_stdio(0);
+        cin.tie(0);
+
         stack <char> par;
         for(char i: s){
             if(par.size()==0) 
