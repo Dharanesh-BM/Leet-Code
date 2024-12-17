@@ -14,9 +14,7 @@ public:
         for(int i = 1; i < given.length(); i++){
             if(str == given[i]){
                 count++;
-                cout << "hi";
             } else{
-                cout << count << endl;
                 ans += to_string(count);
                 ans += str;
                 str = given[i];
@@ -27,11 +25,8 @@ public:
         ans += str;
         str = given[0];
 
-        cout << "hello";
-        cout << ans << endl;
         given = ans;
         n--;
-        cout << "n : " << n << endl;
         return countAndSay(n);
     }
 };
