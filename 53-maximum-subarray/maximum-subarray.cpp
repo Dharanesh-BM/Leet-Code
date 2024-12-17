@@ -7,8 +7,6 @@ public:
             CurrentSum += i;
             maxSum = max(maxSum,CurrentSum);
             CurrentSum = max(0,CurrentSum);
-            // maxSum = max(maxSum,sum);
-            cout << maxSum << " ";
         }
 
         return maxSum;
