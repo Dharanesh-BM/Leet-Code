@@ -1,13 +1,16 @@
 class Solution {
 public:
     bool containsDuplicate(vector<int>& nums) {
-        ios::sync_with_stdio(false);
-        cin.tie(0);
-        unordered_map <int,int> countNum;
+        int maxCount = INT_MIN;
+        unordered_map <int,int> umap;
+
         for(auto i: nums){
-            countNum[i]++;
-            if(countNum[i]>1) return true;
+            umap[i]++;
+            if(umap[i] > maxCount){
+                maxCount = umap[i];
+            }
         }
-        return false;
+
+        return (maxCount > 1) ? true : false;
     }
 };
