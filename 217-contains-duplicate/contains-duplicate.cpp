@@ -6,11 +6,11 @@ public:
 
         for(auto i: nums){
             umap[i]++;
-            if(umap[i] > maxCount){
-                maxCount = umap[i];
+            if(umap[i] > 1){
+                return true;
             }
         }
 
-        return (maxCount > 1) ? true : false;
+        return false;
     }
 };
