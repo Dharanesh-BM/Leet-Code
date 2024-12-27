@@ -10,9 +10,7 @@ public:
         }
 
         sort(result.begin(),result.end());
-        for(auto i:result){
-            cout << i.first << " " << i.second << endl;
-        }
+
         vector <string> ans_sub;
         vector <vector<string>> ans;
 
