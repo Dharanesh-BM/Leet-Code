@@ -5,9 +5,7 @@ class Solution:
         for i in range(min_len):
             ans += word1[i] + word2[i]
         
-        if len(word1) < len(word2):
-            ans += word2[min_len:]
-        else: 
-            ans += word1[min_len:]
+        ans += word2[min_len:]
+        ans += word1[min_len:]
 
         return ans
